@@ -88,15 +88,24 @@ A real vendor package was loaded into the POC repository and its required entry-
 
 The representative target platform remains subject to a device-native software-download test before production use.
 
+## Current transition status — 2026-09-25
+
+The generic repository POC is considered complete for the behaviors tested above. The next phase is a fresh deployment outside the original POC plus representative target-platform qualification.
+
+The next environment is still subject to infrastructure/network readiness and normal code/change review. If an engineering-lab environment becomes available first, the clean deployment and target-device pull may be qualified there before final-environment validation.
+
+See `docs/project-status-2026-09-25.md` for the sanitized pause checkpoint and resume sequence.
+
 ## Remaining qualification work
 
-- Verify and record the original vendor package checksum in the private image manifest.
+- Verify the original vendor package checksum/integrity evidence.
 - Test device-native software pull on the representative target platform without activation.
+- Qualify additional hardware families separately.
 - Test the qualified legacy-platform distribution method.
 - Test Junos HTTP staging on representative production-class Juniper platforms.
 - Validate interrupted-transfer cleanup and retry behavior.
 - Validate representative concurrent transfers.
-- Apply production addressing and network-access policy.
-- Integrate the production NTP source.
+- Qualify capacity using the actual target/intermediate image set.
 - Establish capacity and service monitoring.
-- Reproduce the repository in the production environment and repeat reachability tests.
+- Validate routing, network-access policy, time synchronization and reboot recovery in the target environment.
+- Reproduce the repository in the target environment and repeat environment-specific qualification.
