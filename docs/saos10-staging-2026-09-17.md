@@ -22,20 +22,24 @@ The extracted vendor package tree was preserved as required by the supported dis
 - Remote workstation `GET` downloaded the same object successfully.
 - Nginx served the package through the existing repository configuration; no second web service was required.
 - Operational logging was later validated for local, workstation, and real network-device clients.
+- Generic network-device HTTP retrieval and matching source/device SHA-256 were validated with a Juniper EX2200 on 2026-09-25.
 
-## Current status
+## Current status — 2026-09-25
 
 **POC staging: PASS**
 
-The repository is ready for the next qualification step: production-environment deployment followed by a representative CN3924 device-native SAOS 10 pull **without activation**.
+The package-hosting and generic HTTP-distribution portions of the POC are complete. The remaining SAOS 10 qualification is the vendor integrity check plus a representative CN3924 device-native software download **without activation**.
+
+The next clean deployment may occur in an engineering lab before the final environment is ready. Environment-specific routing, access policy, time synchronization, monitoring and recovery checks should be repeated wherever the service is ultimately deployed.
 
 ## Remaining work
 
-- Verify the original vendor package checksum in the private image manifest.
-- Move/reproduce the repository service in the production environment.
-- Validate production routing, host/network policy, NTP, and repository reachability.
+- Verify the original vendor package checksum/integrity evidence.
+- Deploy a fresh repository instance in the next available qualified environment.
+- Validate target-environment routing, access policy, time state and repository reachability.
 - Run the CN3924 software-download test while monitoring Nginx access and transfer-success logs.
 - Confirm device-side software-download completion before activation is considered.
-- Qualify each hardware family separately according to vendor support documentation.
+- Qualify CN8114 separately.
+- Qualify each additional hardware family according to release-matched vendor support documentation.
 
-See `docs/lab-test-output-2026-09-25.md` for sanitized HTTP transfer evidence from the lab.
+See `docs/project-status-2026-09-25.md` for the current sanitized checkpoint and `docs/lab-test-output-2026-09-25.md` for HTTP transfer evidence from the POC lab.
