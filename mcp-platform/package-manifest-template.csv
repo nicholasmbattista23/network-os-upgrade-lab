@@ -1,0 +1,8 @@
+component,current_version,candidate_version,qualified_target_version,authoritative_source,filename,sha256,size_bytes,approval_status,notes
+Management application,TBD,TBD,TBD,Vendor support source,,,,Pending validation,Keep application and OS qualification separate
+Operating system,TBD,TBD,TBD,Vendor and OS support sources,,,,Pending validation,Confirm exact supported application/OS pair
+Vendor installer,TBD,Release-matched installer,TBD,Vendor portal,,,,Pending validation,Installer must match the qualified application and OS pair
+Database platform,TBD,Release-matched requirement,TBD,Vendor documentation,,,,Pending validation,Record embedded versus external design and migration compatibility
+Runtime dependencies,TBD,Release-matched requirements,TBD,Vendor documentation,,,,Pending validation,Pin only vendor-supported versions
+TLS certificates,Current deployment,Export reissue or import,TBD,Internal PKI,,,,Pending validation,Never commit private keys
+License / entitlement,Current deployment,Rehost or reissue,TBD,Vendor licensing,,,,Pending validation,Keep entitlement details out of the public repository

@@ -1,0 +1,45 @@
+# Vendor software and large binaries
+*.bin
+*.img
+*.iso
+*.tgz
+*.tar
+*.tar.gz
+*.zip
+
+# Secrets, credentials, licenses, and private-key material
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.lic
+.ssh/
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+id_ecdsa
+id_ecdsa.*
+known_hosts
+.netrc
+credentials
+credentials.*
+secrets/
+certificates/
+licenses/
+
+# Production exports and device backups
+backups/
+exports/
+running-configs/
+production-inventory/
+
+# Generated test and operating artifacts
+repo-test-*
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

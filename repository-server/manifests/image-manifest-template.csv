@@ -1,0 +1,3 @@
+population_id,vendor,platform,os_family,suggested_release,qualified_target_release,repository_path,approval_status,image_filename,sha256,size_bytes,source_reference,notes
+EXAMPLE-POPULATION,VENDOR,PLATFORM,OS_FAMILY,CANDIDATE_RELEASE,QUALIFIED_RELEASE,/network-os/vendor/os/platform/,Pending,,,,,Populate exact production values only in the private planning system
+EXAMPLE-SECONDARY,VENDOR,PLATFORM,OS_FAMILY,CANDIDATE_RELEASE,,/network-os/vendor/os/platform/,Pending,,,,,Qualify supported release and upgrade path before staging
