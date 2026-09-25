@@ -20,7 +20,7 @@ Lab evidence intended for public viewing uses placeholders or documentation addr
 
 ## Repository layout
 
-- `docs/` — architecture, operating workflow, validation evidence, and decision records
+- `docs/` — architecture, operating workflow, deployment SOP, validation evidence, and decision records
 - `repository-server/` — Nginx configuration, build/validation scripts, and manifest templates
 - `network-devices/` — vendor-specific staging notes
 - `mcp-platform/` — management-platform rebuild prerequisites, package manifest, migration workflow, and validation
@@ -40,7 +40,7 @@ The repository-server POC has validated:
 - HTTP byte-range support
 - Real network-device HTTP retrieval with matching source/device SHA-256
 
-See the [POC validation record](docs/poc-validation-2026-09-16.md) and [sanitized lab test output](docs/lab-test-output-2026-09-25.md) for evidence and remaining qualification work.
+See the [deployment and operations SOP](docs/deployment-sop.md), [POC validation record](docs/poc-validation-2026-09-16.md), and [sanitized lab test output](docs/lab-test-output-2026-09-25.md).
 
 ## Quick start
 
