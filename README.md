@@ -20,10 +20,18 @@ Lab evidence intended for public viewing uses placeholders or documentation addr
 
 ## Repository layout
 
-- `docs/` — architecture, operating workflow, deployment SOP, validation evidence, and decision records
+- `docs/` — architecture, operating workflow, deployment SOP, status checkpoints, validation evidence, and decision records
 - `repository-server/` — Nginx configuration, build/validation scripts, and manifest templates
 - `network-devices/` — vendor-specific staging notes
 - `mcp-platform/` — management-platform rebuild prerequisites, package manifest, migration workflow, and validation
+
+## Current status
+
+The generic repository POC is complete for HTTP distribution, transfer integrity, operational logging, and real network-device retrieval. A real multi-file vendor package has also been staged through the repository workflow.
+
+The next qualification gate is a representative target-device software download **without activation** after the package's original vendor integrity evidence is verified. The next fresh deployment may occur in an engineering lab before the final environment is ready.
+
+See the [current project checkpoint](docs/project-status-2026-09-25.md) for completed work and remaining qualification.
 
 ## Current proof of concept
 
@@ -40,7 +48,7 @@ The repository-server POC has validated:
 - HTTP byte-range support
 - Real network-device HTTP retrieval with matching source/device SHA-256
 
-See the [deployment and operations SOP](docs/deployment-sop.md), [POC validation record](docs/poc-validation-2026-09-16.md), and [sanitized lab test output](docs/lab-test-output-2026-09-25.md).
+See the [deployment and operations SOP](docs/deployment-sop.md), [POC validation record](docs/poc-validation-2026-09-16.md), [current project checkpoint](docs/project-status-2026-09-25.md), and [sanitized lab test output](docs/lab-test-output-2026-09-25.md).
 
 ## Quick start
 
